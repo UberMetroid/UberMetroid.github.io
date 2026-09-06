@@ -1,0 +1,29 @@
+/* ==========================================================================
+   1982 TERMINAL WORKSTATION ATMOSPHERE & PHOSPHOR STYLES
+   Minimalist Unix CRT aesthetic // Zero Fluff
+   ========================================================================== */
+
+/* CRT Glass Vignette & Phosphor Glow */
+.terminal-window {
+  position: relative;
+}
+
+.terminal-window::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(52, 211, 153, 0.03) 0%,
+    transparent 70%
+  );
+  border-radius: inherit;
+  z-index: 1;
+}
+
+/* Monospace Text Selection */
+::selection {
+  background: #34d399;
+  color: #04100c;
+}

@@ -1,0 +1,43 @@
+/* ==========================================================================
+   ACCESSIBILITY & REDUCED MOTION SAFEGUARDS
+   1982 Terminal Architecture // High Contrast & Tactile Accessibility
+   ========================================================================== */
+
+/* Screen Reader Only Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* System prefers-reduced-motion Overrides */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Accessible High-Contrast Focus Ring */
+:focus-visible {
+  outline: 2px solid #34d399 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.4) !important;
+}
+
+/* Ensure Links and Interactive Controls have visible focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #34d399 !important;
+  outline-offset: 2px !important;
+}

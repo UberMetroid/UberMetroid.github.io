@@ -1,0 +1,80 @@
+:root {
+  /* ==========================================================================
+     1. COLOR PALETTE: 1982 TERMINAL OBSIDIAN, PHOSPHOR GREEN & AMBER
+     ========================================================================== */
+  --bg-space-void: #070a0f;
+  --bg-space-deep: #0a0e17;
+  --bg-space-lift: #0d131f;
+  --bg-panel-hud: #0d131e;
+  --bg-panel-elevated: #111827;
+  --bg-panel-highlight: #141c2e;
+
+  /* Phosphor Accents */
+  --color-term-green: #34d399;
+  --color-term-green-dim: rgba(52, 211, 153, 0.2);
+  --color-term-amber: #f59e0b;
+  --color-term-amber-dim: rgba(245, 158, 11, 0.2);
+  --color-cyan-glow: #38bdf8;
+  --color-cyan-bright: #7dd3fc;
+  --color-bio-emerald: #10b981;
+  --color-bio-bright: #34d399;
+  --color-phazon-amber: #f59e0b;
+  --color-phazon-bright: #fbbf24;
+
+  /* Typography: High signal-to-noise ratio */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #070a0f;
+
+  /* ==========================================================================
+     2. BORDERS, GEOMETRY & CORNERS (PURE SQUARE 90° CORNERS - ZERO ROUNDING)
+     ========================================================================== */
+  --border-subtle: 1px solid #1e293b;
+  --border-active: 1px solid #34d399;
+  --border-radius-sm: 0;
+  --border-radius-md: 0;
+  --border-radius-lg: 0;
+
+  /* Flat Borders & Subtle CRT Glare - Zero Diffuse Mac Shadows */
+  --glow-cyan-sm: none;
+  --glow-cyan-md: none;
+  --glow-cyan-lg: none;
+  --glow-bio-md: none;
+  --glow-phazon-md: none;
+  --glow-text-cyan: none;
+  --glow-text-bio: none;
+  --glow-text-phazon: none;
+
+  /* ==========================================================================
+     3. TYPOGRAPHY (PURE MONOSPACE TERMINAL GRID - ZERO APPLE SYSTEM FONTS)
+     ========================================================================== */
+  --font-display: 'JetBrains Mono', 'Courier New', Courier, monospace;
+  --font-mono: 'JetBrains Mono', 'Courier New', Courier, monospace;
+  --font-body: 'JetBrains Mono', 'Courier New', Courier, monospace;
+
+  --font-size-hero: clamp(2rem, 4.5vw, 3.2rem);
+  --font-size-h2: clamp(1.4rem, 2.8vw, 2rem);
+  --font-size-h3: clamp(1.1rem, 1.8vw, 1.4rem);
+  --font-size-lead: 1.05rem;
+  --font-size-body: 0.92rem;
+  --font-size-telemetry: 0.78rem;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.7;
+
+  /* ==========================================================================
+     4. SPACING & ELEVATION
+     ========================================================================== */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 72px;
+  --space-3xl: 110px;
+
+  --header-height: 52px;
+}

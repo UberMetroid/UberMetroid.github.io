@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Production build output (built in CI via GitHub Actions)
+dist/
+
+# Agent workspace artifacts & logs
+.agents/
+*.log
+ORIGINAL_REQUEST.md
+TEST_INFRA.md
+TEST_READY.md
+
+# OS metadata
+.DS_Store
+Thumbs.db

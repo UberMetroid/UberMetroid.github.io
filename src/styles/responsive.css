@@ -1,0 +1,131 @@
+/* ==========================================================================
+   1982 TERMINAL WORKSTATION RESPONSIVE MATRIX
+   Target Viewports:
+   - 2560x1440, 1920x1080 (Ultra / FHD Workstations)
+   - 1440x900, 1024x768 (Desktop & Tablet Landscape)
+   - 768x1024 (Tablet Portrait)
+   - 390x844, 375x667, 360x800 (Mobile Modern & Compact)
+   - 320x568, 280x653 (Narrow Compact & Folding Outer Screen)
+   ========================================================================== */
+
+/* Strict Zero Horizontal Overflow Guard */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Tablet & Smaller Screens (<= 768px) */
+@media (max-width: 768px) {
+  .terminal-meta {
+    font-size: 0.68rem;
+    gap: 6px 10px;
+  }
+
+  .window-title {
+    font-size: 0.72rem;
+  }
+
+  .terminal-tenets-bar {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Mobile Screens (<= 600px) */
+@media (max-width: 600px) {
+  .masthead-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .terminal-meta {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .ascii-banner {
+    font-size: clamp(0.48rem, 2.2vw, 0.65rem);
+    padding-left: 8px;
+  }
+
+  .terminal-title {
+    font-size: 1.6rem;
+  }
+
+  .terminal-intro {
+    font-size: 0.88rem;
+  }
+
+  .terminal-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .terminal-actions .term-btn {
+    width: 100%;
+    min-height: 40px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-actions .term-btn {
+    width: 100%;
+    min-height: 40px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/* Narrow & Ultra-Compact Screens (<= 360px down to 280px) */
+@media (max-width: 360px) {
+  .terminal-container {
+    padding: 0 8px;
+  }
+
+  .window-body {
+    padding: 12px;
+  }
+
+  .ascii-banner {
+    font-size: 0.42rem;
+    line-height: 1.2;
+    overflow-x: auto;
+  }
+
+  .terminal-branding {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .brand-title {
+    font-size: 0.95rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
