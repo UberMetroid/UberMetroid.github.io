@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UberMetroid — open-source projects." />
+  <title>UberMetroid</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --fg: #1a1a1a;
+      --accent: #ce422b;
+      --muted: #6b6b6b;
+      --card: #ffffff;
+      --border: #e5e5e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1a1a1a; --fg: #ececec; --card: #232323; --border: #2e2e2e; --muted: #999; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      margin: 0;
+      padding: 80px 20px;
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    h1 { font-family: Georgia, serif; font-size: 2.4em; margin: 0 0 8px; }
+    .lede { color: var(--muted); font-size: 1.15em; margin: 0 0 40px; }
+    .projects { display: grid; gap: 16px; margin: 32px 0; }
+    .project {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 28px;
+      text-decoration: none;
+      color: var(--fg);
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .project:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .project h2 { margin: 0 0 6px; font-size: 1.3em; color: var(--accent); }
+    .project p { margin: 0; color: var(--muted); }
+    footer { margin-top: 60px; color: var(--muted); font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>UberMetroid</h1>
+    <p class="lede">Open-source projects. Pure-stdlib Rust where it counts, single static binaries where they ship.</p>
+
+    <div class="projects">
+      <a class="project" href="/glances-rs/">
+        <h2>glances-rs &rarr;</h2>
+        <p>A pure-standard-library Rust port of Glances — the cross-platform system monitor by Nicolas Hennion (Nicolargo) and contributors. Single static binary, zero crates.io dependencies, 24 plugins, 18 exporters, 5 surfaces (HTTP / XML-RPC / MCP / stdout CSV / stdout JSON).</p>
+      </a>
+    </div>
+
+    <footer>
+      GitHub: <a href="https://github.com/UberMetroid">github.com/UberMetroid</a>
+    </footer>
+  </main>
+</body>
+</html>
